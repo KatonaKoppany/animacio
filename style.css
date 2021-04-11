@@ -7,9 +7,15 @@ i{
     font-size: 200px;
 }
 
+#lightbulb{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
 .fa-lightbulb{
     animation-name: fa-lightbulb;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
@@ -27,4 +33,42 @@ i{
         100% {color: blueviolet;}
 }
 
+
+.fa-basketball-ball{
+    color: chocolate;
+    animation-name: fa-basketball-ball;
+    animation-duration: 15s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fa-basketball-ball{
+    0%   {left: 0px;}
+    25%  {left: 94%;}
+    50%  {left:0px;}
+    75%  {left:94%;}
+    100% {left:0px;}
+
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(180deg);}
+}
+
+.fa-ghost{
+    animation-name:  fa-ghost;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fa-ghost{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 100px); }
+    100%   { transform: translate(0, -0px); }
+
+    0%   {left: 0px;}
+    25%  {left: 50%;}
+    50%  {left:0px;}
+    75%  {left:50%;}
+    100% {left:0px;}
+}
 
