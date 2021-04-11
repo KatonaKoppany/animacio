@@ -1,0 +1,30 @@
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+i{
+    font-size: 200px;
+}
+
+.fa-lightbulb{
+    animation-name: fa-lightbulb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fa-lightbulb{
+        0%   {color: red;}
+        10%  {color: yellow;}
+        20%  {color: blue;}
+        30%  {color: green;}
+        40%  {color: purple;}
+        50%  {color: gray;}
+        60%  {color: black;}
+        70%  {color: white;}
+        80%  {color: violet;}
+        90%  {color: turquoise;}
+        100% {color: blueviolet;}
+}
+
+
