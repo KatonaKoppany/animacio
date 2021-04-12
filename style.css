@@ -11,12 +11,14 @@ i{
     display: flex;
     justify-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .fa-lightbulb{
     animation-name: fa-lightbulb;
     animation-duration: 20s;
     animation-iteration-count: infinite;
+    transition: 5s;
 }
 
 @keyframes fa-lightbulb{
@@ -33,6 +35,9 @@ i{
         100% {color: blueviolet;}
 }
 
+.fa-lightbulb:hover{
+    font-size: 500px;
+}
 
 .fa-basketball-ball{
     color: chocolate;
@@ -40,6 +45,7 @@ i{
     animation-duration: 15s;
     position: relative;
     animation-iteration-count: infinite;
+    transition: 5s;
 }
 
 @keyframes fa-basketball-ball{
@@ -53,11 +59,16 @@ i{
     100% {transform: rotate(180deg);}
 }
 
+.fa-basketball-ball:hover{
+    font-size: 100px;
+}
+
 .fa-ghost{
     animation-name:  fa-ghost;
     animation-duration: 5s;
     position: relative;
     animation-iteration-count: infinite;
+    transition: 5s;
 }
 
 @keyframes fa-ghost{
@@ -70,5 +81,9 @@ i{
     50%  {left:0px;}
     75%  {left:50%;}
     100% {left:0px;}
+}
+
+.fa-ghost:hover{
+    color: blueviolet;
 }
 
