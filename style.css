@@ -154,3 +154,37 @@ nav:hover .arrow{
     color: blueviolet;
 }
 
+
+@media only screen and (max-width:500px) {
+    nav{
+        width: 100%;
+        height: 4rem;
+        bottom: 0;
+    }
+
+    nav:hover{
+        width: 100%;
+        height: 10rem;
+        transition: height 200ms ease;
+    }
+
+    nav{
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .icons{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .arrow{
+        transform: rotate(-90deg);
+        transition: transform var(--transition-speed);
+    }
+    
+    nav:hover .arrow{
+        transform: rotate(-270deg);
+    }
+}
