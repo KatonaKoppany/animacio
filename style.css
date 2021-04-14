@@ -19,6 +19,10 @@ body{
     float: right;
 }
 
+.felirat{
+    visibility: hidden;
+}
+
 nav{
     position: fixed;
     display: flex;
@@ -35,12 +39,11 @@ nav{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: blue;
 }
 
 .icons i{
     font-size: 40px;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 nav:hover{
