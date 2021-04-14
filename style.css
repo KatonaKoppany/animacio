@@ -1,20 +1,89 @@
+:root{
+    --transition-speed: 600ms;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans';
+    background-color: #FF5733;
+}
+
 #container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 800px;
+    float: right;
 }
 
-i{
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+    height: 100%;
+    background-color: #601486;
+    transition: width 200ms ease;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: blue;
+}
+
+.icons i{
+    font-size: 40px;
+    padding: 20px;
+}
+
+nav:hover{
+    width: 10rem;
+    transition: width 200ms ease;
+}
+
+.icons .fa-lightbulb, .fa-ghost, .fa-basketball-ball{
+    transition: 2s ease;
+}
+.icons .fa-lightbulb:hover{
+    color:#C70039;
+    transition: 2s ease;
+}
+.icons .fa-basketball-ball:hover{
+    color:#C70039;
+    transition: 2s ease;
+}
+.icons .fa-ghost:hover{
+    color:#C70039;
+    transition: 2s ease;
+}
+
+.arrow{
+    font-size: 60px;
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+nav:hover .arrow{
+    transform: rotate(-540deg);
+}
+
+
+#container i{
     font-size: 200px;
 }
 
 #lightbulb{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
     position: relative;
 }
 
-.fa-lightbulb{
+#lightbulb .fa-lightbulb{
     animation-name: fa-lightbulb;
     animation-duration: 20s;
     animation-iteration-count: infinite;
@@ -35,11 +104,11 @@ i{
         100% {color: blueviolet;}
 }
 
-.fa-lightbulb:hover{
+#lightbulb .fa-lightbulb:hover{
     font-size: 500px;
 }
 
-.fa-basketball-ball{
+#basketball .fa-basketball-ball{
     color: chocolate;
     animation-name: fa-basketball-ball;
     animation-duration: 15s;
@@ -59,11 +128,11 @@ i{
     100% {transform: rotate(180deg);}
 }
 
-.fa-basketball-ball:hover{
+#basketball .fa-basketball-ball:hover{
     font-size: 100px;
 }
 
-.fa-ghost{
+#ghost .fa-ghost{
     animation-name:  fa-ghost;
     animation-duration: 5s;
     position: relative;
@@ -83,7 +152,7 @@ i{
     100% {left:0px;}
 }
 
-.fa-ghost:hover{
+#ghost .fa-ghost:hover{
     color: blueviolet;
 }
 
