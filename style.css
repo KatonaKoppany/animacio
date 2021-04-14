@@ -52,6 +52,7 @@ nav:hover{
 }
 
 .icons .fa-lightbulb, .fa-ghost, .fa-basketball-ball{
+    color: black;
     transition: 2s ease;
 }
 .icons .fa-lightbulb:hover{
